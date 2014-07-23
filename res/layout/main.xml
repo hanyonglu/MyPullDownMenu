@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#00ffdd" >
+    
+    <include android:id="@+id/header" layout="@layout/header" />
+    
+    <FrameLayout 
+    	android:id="@+id/layout_body"
+    	android:layout_width="fill_parent"
+    	android:layout_height="0.0dip"
+    	android:layout_weight="1.0"
+    	android:background="@drawable/img01" />
+    
+    <LinearLayout 
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dip">
+        
+        <RadioGroup
+    		android:id="@+id/tab_bottom"
+    		android:background="@drawable/maintab_toolbar_bg"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom">
+    		
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/bottom_news"
+    			android:drawableTop="@drawable/icon_1_n"
+    			android:id="@+id/TabNews"
+    			style="@style/main_tab_bottom"/>
+    		
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/bottom_special"
+    			android:drawableTop="@drawable/icon_2_n"
+    			android:id="@+id/TabSpecial"
+    			style="@style/main_tab_bottom"/>
+    		
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/bottom_olympic"
+    			android:drawableTop="@drawable/icon_3_n"
+    			android:id="@+id/TabOlympic"
+    			style="@style/main_tab_bottom"/>
+    		
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/bottom_image"
+    			android:drawableTop="@drawable/icon_4_n"
+    			android:id="@+id/TabImage"
+    			style="@style/main_tab_bottom"/>
+    		
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/bottom_more"
+    			android:drawableTop="@drawable/icon_5_n"
+    			android:id="@+id/TabMore"
+    			style="@style/main_tab_bottom"/>
+    		
+    	</RadioGroup>
+    </LinearLayout>
+</LinearLayout>

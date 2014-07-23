@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyPollDownNavigationActivity!</string>
+    <string name="app_name">MyPullDownNavigation</string>
+	<string name="head_topic">今日头条</string>
+	<string name="head_weather">郑州</string>
+	<string name="bottom_news">新闻</string>
+    <string name="bottom_special">专题</string>
+    <string name="bottom_olympic">奥运</string>
+    <string name="bottom_image">图片</string>
+    <string name="bottom_more">更多</string>
+</resources>

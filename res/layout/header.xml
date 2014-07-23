@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/titlebg" >
+
+        <ImageView
+            android:id="@+id/imageViewWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_menu_weather" />
+        
+        <TextView
+            android:id="@+id/textViewWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/imageViewWeather"
+            android:text="@string/head_weather" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textViewTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_topic"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+            
+            <ImageView
+	            android:id="@+id/imageViewTopic"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="3dp"
+	            android:src="@drawable/ic_menu_trangle_down" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_menu_refresh" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pulldown_in_out" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pull_in</item>
+        <item name="android:windowExitAnimation">@anim/pull_out</item>
+    </style>
+    <style name="pulldown_out_in" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pull_out</item>
+        <item name="android:windowExitAnimation">@anim/pull_in</item>
+    </style>
+    <style name="main_tab_bottom">
+		<item name="android:textSize">@dimen/font_size_12</item>
+	    <item name="android:textColor">#ffffffff</item>
+	    <item name="android:ellipsize">marquee</item>
+	    <item name="android:gravity">center_horizontal</item>
+	    <item name="android:background">@drawable/home_btn_bg</item>
+	    <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:button">@null</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+	    <item name="android:layout_weight">1.0</item>  
+		<item name="android:paddingBottom">@dimen/bottom_tab_padding_up</item>
+	</style>
+</resources> 
